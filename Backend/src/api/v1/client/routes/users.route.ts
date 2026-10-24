@@ -48,4 +48,7 @@ router.post(
 // [GET] /api/v1/user/list
 router.get('/list', Auth.requireAuth, controller.list);
 
+// [GET] /api/v1/healths
+router.get('/healths', controller.healths);
+
 export default router;
